@@ -1,0 +1,253 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Bolt - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* OVERALL ASPECT */
+
+body {
+  background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* Bootstrap Modifications */
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+pre {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	text-align: left;
+	font-size: 17px;
+}
+
+pre a {
+	text-decoration: underline;
+}
+
+.navbar {
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ffffff;
+	background-color: #4e4e4e;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 50px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: black;
+	margin: 0;
+}
+
+.navbar-brand h1 {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.navbar-header {
+	width: 350px;
+}
+
+.navbar-header div#share {
+	display: inline-block;
+	margin: 5px 0 0 10px;
+}
+
+.btn-theme {
+	color: #ffffff;
+	background-color: #45D9DD;
+	border-color: transparent;
+}
+
+.btn {
+	padding: 10px 30px;
+	margin: -10px 0 0 0;
+	font-size: 18px;
+	border: 5px solid transparent;
+	border-radius: 0px;
+}
+
+.lead {
+	letter-spacing: 1px;
+	margin-bottom: 34px;
+}
+
+/* WRAP SECTIONS */
+
+/* hello */
+#hello {
+	width: 100%;
+	padding: 13% 0;
+	background: black url('../img/brain.jpg') no-repeat center 40%;
+	background-size: 100%;
+}
+
+#hello h1 {
+	font-size: 90px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	color: black;
+	text-shadow: 2px 2px 5px #deaad9;
+}
+
+#hello h2 {
+	color: black;
+	font-weight: 700;
+	text-shadow: 2px 2px 3px #deaad9;
+}
+
+/* Green */
+#green {
+	background-color: #4e4e4e;
+	padding-top: 20px;
+	margin-bottom: 0px;
+}
+
+#green h3 {
+	color: white;
+	font-weight: 400;
+	margin-bottom: 35px;
+	font-size: 28px;
+}
+
+#green p {
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#green #video-matrix {
+	margin: 30px 0 10px 0;
+}
+
+#usecase pre, #inprogress pre {
+	font-size: 14px;
+}
+
+#usecase pre {margin-top: 15px;}
+#inprogress pre {display: inline-block; width: 360px;}
+
+#usecase h3, #inprogress h3 {
+	font-size: 35px;
+	margin: 40px 0;
+}
+
+#usecase img {width: 360px;}
+
+/* Skills */
+#skills {
+	background-color: #4e4e4e;
+	padding-top: 30px;
+}
+
+#skills h3 {
+	color: white;
+}
+
+#skills p {
+	color: white;
+	font-weight: 400;
+}
+
+/* Footer */
+#f {
+	padding-top: 20px;
+	background-color: #284A8B;
+}
+
+#f p {
+	color: white;
+	text-align: right;
+	font-weight: 400;
+}
+
+/* Image Opacity */
+.grid img {
+    opacity: .7;
+}
+.grid img:hover {
+    opacity: 1;
+}
