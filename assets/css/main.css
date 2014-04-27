@@ -114,25 +114,25 @@ pre a {
 	padding-bottom: 0px;
 	color: black;
 	margin: 0;
+	float: none;
+}
+
+.navbar-brand h1, .navbar-header div#share {
+	display: inline-block;
+	position: relative;
+	left: 10px;
 }
 
 .navbar-brand h1 {
-	display: inline-block;
+    bottom: 10px;
 	font-size: 30px;
 	font-weight: bold;
-	position: relative;
-    bottom: 10px;
-    left: 10px;
     margin: 0;
     font-weight: 300;
 }
 
-.navbar-header {
-	width: 350px;
-}
-
 .navbar-header div#share {
-	display: inline-block;
+	bottom: 8px;
 	margin: 5px 0 0 10px;
 }
 
@@ -203,6 +203,8 @@ pre a {
 	margin: 30px 0 10px 0;
 }
 
+#green iframe {max-width: 500px;}
+
 #usecase pre, #inprogress pre {
 	font-size: 14px;
 }
@@ -215,7 +217,7 @@ pre a {
 	margin: 40px 0;
 }
 
-#usecase img {width: 360px;}
+#usecase iframe {max-width: 360px;}
 
 /* Skills */
 #skills {
@@ -232,6 +234,10 @@ pre a {
 	font-weight: 400;
 }
 
+#skills button {
+	margin-bottom: 30px;
+}
+
 /* Footer */
 #f {
 	padding-top: 20px;
@@ -242,6 +248,7 @@ pre a {
 	color: white;
 	text-align: right;
 	font-weight: 400;
+	margin-right: 20px;
 }
 
 /* Image Opacity */
