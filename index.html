@@ -94,17 +94,8 @@ Brain.learn('Kung Fu');</code>
 
 <pre class="php">
 <code>//Men in Black - Agent J (<a target="blank_" href="http://en.wikipedia.org/wiki/Neuralyzer">Neuralyzer</a>)
-Brain.forgetFrom('2014-01-01 00:00:01');</code>
+Brain.forget({from:'2014-01-01 00:00:01'});</code>
 </pre>
-				</div>
-				<div class="col-lg-4">
-					<iframe width="100%" height="300" src="http://www.youtube.com/embed/aw60Ma4c2bw?rel=0" frameborder="0" allowfullscreen></iframe>
-
-<pre class="php">
-<code>//Avatar - Miles Quaritch AMP Suit
-Brain.body.syncMove(AMP.accessToken);</code>
-</pre>
-
 				</div>
 				<div class="col-lg-4">
 					<iframe width="100%" height="300" src="http://www.youtube.com/embed/xP-ZwmCPBAs?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -113,7 +104,14 @@ Brain.body.syncMove(AMP.accessToken);</code>
 <code>//Limiless - Eddie Morra
 Brain.abilities.extends({multiplier:10});</code>
 </pre>
+				</div>
+				<div class="col-lg-4">
+					<iframe width="100%" height="300" src="http://www.youtube.com/embed/aw60Ma4c2bw?rel=0" frameborder="0" allowfullscreen></iframe>
 
+<pre class="php">
+<code>//Avatar - Miles Quaritch AMP Suit
+Brain.body.move({source:AMP.accessToken});</code>
+</pre>
 				</div>
 			</div>
 			
@@ -124,7 +122,7 @@ Brain.abilities.extends({multiplier:10});</code>
 
 <pre class="php">
 <code>//Superman
-Brain.body.flyTo('<a target="blank_" href="https://www.google.com/maps/place/48°51'03.8N+2°25'42.8E/@48.85106,2.42855,15z">48.85106 2.42855</a>');</code>
+Brain.body.fly({to:'<a target="blank_" href="https://www.google.com/maps/place/48°51'03.8N+2°25'42.8E/@48.85106,2.42855,15z">48.85106 2.42855</a>'});</code>
 </pre>
 
 				</div>
@@ -170,7 +168,7 @@ Brain.mouth.drink(default 'Beer')
 				<div class="col-lg-4">
 
 <pre class="php">
-<code>Brain.wash({source:'tv', shutdownIn:'4h'})
+<code>Brain.wash({source:'tv', shutdownAt:'midnight'})
 Brain.eyes.watch(<a target="blank_" href="https://developers.google.com/youtube/v3/getting-started">Youtube.videoId</a>)
 Brain.die({age:100, method:'suicide'})
 Brain.fingers('index').draw(utf-8 <i class="fa fa-heart"></i>)
