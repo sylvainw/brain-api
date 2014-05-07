@@ -127,6 +127,11 @@ pre a {
 	width: 123px !important;
 }
 
+.navbar-header div#share div.fb-share-button iframe {
+	width: 100px;
+	height: 20px;
+}
+
 .navbar-header div#share div.fb-share-button {
 	bottom: 5px;
 }
