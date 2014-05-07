@@ -123,6 +123,20 @@ pre a {
 	left: 10px;
 }
 
+.navbar-header div#share iframe#twitter-widget-0 {
+	width: 123px !important;
+}
+
+.navbar-header div#share div.fb-share-button {
+	bottom: 5px;
+}
+
+@media (max-width: 992px) {
+	.navbar-header div#share div.fb-share-button {
+		display:none;
+	}
+}
+
 .navbar-brand h1 {
     bottom: 10px;
 	font-size: 30px;
@@ -210,7 +224,7 @@ pre a {
 }
 
 #usecase pre {margin-top: 15px;}
-#inprogress pre {display: inline-block; width: 360px;}
+#inprogress pre {display: inline-block; max-width: 360px;}
 
 #usecase h3, #inprogress h3 {
 	font-size: 35px;

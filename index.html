@@ -60,7 +60,7 @@
 			<a class="navbar-brand" href="#"><i class="fa fa-cloud"></i><h1>Brain <strong>API</strong></h1></a>
 			<div id="share">
 				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://brain-api.com" data-size="large" data-hashtags="brainapi" data-dnt="true">Tweet</a>
-			    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-share-button" data-href="http://brain-api.com" data-type="button_count"></div>
 			</div>
         </div>
         <div class="navbar-collapse collapse">
@@ -183,8 +183,8 @@ Brain.levitate(Wolverine.Brain.body);</code>
 Brain.ears.listen(<a target="blank_" href="http://developers.deezer.com/sdk/javascript">Deezer.trackId</a>)
 Brain.legs.walk('3 steps')
 Brain.streamTo(<a target="blank_" href="https://developers.facebook.com/docs/facebook-login/access-tokens/">Facebook.accessToken</a>)
+Brain.remind(<a target="blank_" href="https://developers.google.com/google-apps/calendar/auth">GcalendarToken</a>, Brain.eyes.blink())
 Brain.sleep(duration, callback wakeup)
-Brain.mouth.drink(default 'Beer')
 </code>
 </pre>
 
@@ -207,7 +207,7 @@ Brain.connect({target:DNA.accessToken})
 <pre class="php">
 <code>Brain.calc({app:'Einstein', formula:'E=mc²'})
 Brain.upgrade({target:'mind', url:'<a target="blank_" href="http://korben.info">Korben.info</a>'})
-Brain.remind(<a target="blank_" href="https://developers.google.com/google-apps/calendar/auth">GcalendarToken</a>, Brain.eyes.blink())
+Brain.mouth.drink(default 'Beer')
 Brain.fix({disease:'Alzheimer'})
 Brain.absorbs({app:'Heroine'})
 Brain.traverse({method:'map.reduce'})</code>
@@ -253,9 +253,6 @@ Brain.traverse({method:'map.reduce'})</code>
 		</div>
 	</div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/highlight/highlight.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -271,5 +268,17 @@ Brain.traverse({method:'map.reduce'})</code>
 	  ga('send', 'pageview');
 
 	</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=716856145044138&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
   </body>
 </html>
