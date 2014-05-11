@@ -143,15 +143,17 @@ pre a {
 }
 
 .navbar-brand h1 {
-    bottom: 10px;
+    bottom: 0;
 	font-size: 30px;
 	font-weight: bold;
     margin: 0;
     font-weight: 300;
 }
 
+.navbar-brand img {height: 50px;}
+
 .navbar-header div#share {
-	bottom: 8px;
+	bottom: 0;
 	margin: 5px 0 0 10px;
 }
 
